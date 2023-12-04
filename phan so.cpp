@@ -51,10 +51,10 @@ void themphanso(phanso a[], int &h)
 	cout<<"nhap phan so muon them "; cin>>t;
 	if ( t + h > 10 ) cout<<"o chua da day";
 	else{
-			for ( int i = 0; i < t; i++){
-				cout<<endl<<"nhap phan so them"<<endl;
-				nhapPS(a[h]);	
-				h++;
+		for ( int i = 0; i < t; i++){
+			cout<<endl<<"nhap phan so them"<<endl;
+			nhapPS(a[h]);	
+			h++;
 		}
 	}
 }
