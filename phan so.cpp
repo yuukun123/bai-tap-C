@@ -4,7 +4,7 @@ using namespace std;
 struct phanso
 {
 	double tu, mau;
-}; phanso a[10]; int h;
+}; phanso a[10]; int h; int t;
 
 void nhapPS(phanso &x)
 {
@@ -46,6 +46,18 @@ void Xuat_Danh_Sach_Phan_So(phanso a[], int h)
 	}
 }
 
+void themphanso(phanso a[], int &h)
+{
+	cout<<"nhap phan so muon them "; cin>>t;
+	if ( t + h > 10 ) cout<<"o chua da day";
+	else{
+			for ( int i = 0; i < t; i++){
+				cout<<endl<<"nhap phan so them"<<endl;
+				nhapPS(a[h]);	
+				h++;
+		}
+	}
+}
 phanso Tinh_Tong_2_Phan_So(phanso x, phanso y)
 {
 	phanso tong;
@@ -170,12 +182,14 @@ void Rut_Gon_Danh_Sach_Phan_So()
 }
 
 void Menu()
-{
+{				
+	nhapn(h);
+	Nhap_Danh_Sach_Phan_So(a,h);
 	int luachon;
 	do{
-		cout<<"\n\n\t	   ===Menu==="
+		cout<<"\n\t	   ===Menu==="
 		<<"\n\t_________________________________"
-		<<"\n\t|  1. nhap phan so 		|" 				
+		<<"\n\t|  1. nhap them phan so 	|" 				
 		<<"\n\t|  2. hien thi phan so 		|"
 		<<"\n\t|  3. phep tinh  2 phan so 	|"
 		<<"\n\t|  4. rut gon phan so 		|"
@@ -188,8 +202,7 @@ void Menu()
 				break;
 			}
 			case 1: {
-				nhapn(h);
-				Nhap_Danh_Sach_Phan_So(a,h);
+				themphanso(a,h);
 				break;
 			}
 			case 2:{
