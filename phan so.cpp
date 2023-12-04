@@ -10,7 +10,6 @@ void nhapPS(phanso &x)
 {
 	cout<<"nhap tu so: "; cin>>x.tu;
 	cout<<"nhap mau so: "; cin>>x.mau;
-	
 }
 void xuatPS(phanso x)
 {
