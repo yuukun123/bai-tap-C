@@ -29,10 +29,12 @@ int snt(){
 }
 void tongn()
 {
-	int t = n % 10;
-	int o = n / 10;
-	u = t + o;
-	cout<<"tong cua n: "<<u;
+	int s = 0;
+	for (int i = n; i > 0; i /= 10)
+	{
+		s += i%10;
+	} 
+	cout<<"tong cua n: "<<s;
 }
 int main(){
 	cout<<"nhap n: ";
