@@ -2,13 +2,19 @@
 using namespace std;
 
 int a, b, c, d, e, f, D, Dx, Dy, x, y;
-cout<<"he pt ";
-cout<<"nhap a, b, c, d, e, f "; cin>>a>>b>>c>>d>>e>>f;
 
 int main(){
+	cout<<"he pt "<<endl;
+	cout<<"nhap a "; cin>>a;
+	cout<<"nhap b " ; cin>>b;
+	cout<<"nhap c "; cin>>c;
+	cout<<"nhap d "; cin>>d;
+	cout<<"nhap e "; cin>>e;
+	cout<<"nhap f "; cin>>f;
+
 	D = a * e - b * d;
-	D1 = c * e - b * f;
-	D2 = a * f - c * d;
+	Dx = c * e - b * f;
+	Dy = a * f - c * d;
 
 	if ( D == 0 )
 	{
@@ -18,7 +24,7 @@ int main(){
 	}
 
 	else{
-		x = Dx/D; cout<<x;
-		y = Dy/D; cout<<y;
+		x = Dx/D; cout<<"pt co ngiem x: "<<x<<endl;
+		y = Dy/D; cout<<"pt co ngiem y: "<<y;
 	}
 }
