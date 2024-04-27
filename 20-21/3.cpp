@@ -80,21 +80,14 @@ fraction Tinh_Tong_Tat_Ca_Phan_So(fraction fr[])
 
 int UCLN(int x, int y)
 {
-	if (x < 0)
-	{
-		x *= -1;
-	}
-	if (y < 0)
-	{
-		y *= -1;
-	}
+
     int r;
-    while (x%y!=0)
-    {
+   
+    
         r=x%y;
         x=y;
         y=r;
-    }
+    
 	return y;
 }
 void Rut_Gon_Phan_So(fraction &fr)

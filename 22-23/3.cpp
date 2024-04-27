@@ -15,7 +15,7 @@ int main(){
 	cout<<"nhap n "; cin>>n;
 
 	if(k > n)
-		cout<<"nhap saii";
+		cout<<"nhap sai";
 	else {
 		cout<<giaithua(k,n)<<endl;
 	}

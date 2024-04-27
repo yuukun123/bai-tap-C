@@ -5,14 +5,13 @@ using namespace std;
 
 int arr[100][100]; int m, n; int i, j;
 
-void nhap( int m, int n){
+void nhap( int m, int n){ 
 	for( i = 1; i <= m; i++){
 		for( j = 1; j <= n; j++){
 			cout<<"a["<<i<<"]["<<j<<"]: "; cin>>arr[i][j];
 		}
 	}
 }
-
 void xuat( int m, int n){
 	for( i = 1; i <= m; i++){
 		for( j = 1; j <= n; j++){
@@ -20,7 +19,6 @@ void xuat( int m, int n){
 		} cout<<endl;
 	}
 }
-
 void ss(int m, int n){
 	int temp = INT_MAX;
 	for( i = 1; i <= m; i++){
@@ -31,7 +29,6 @@ void ss(int m, int n){
 		} 
 	} cout<<endl<<"chi phi nho nhat "<<temp<<endl;
 }
-
 void phancong(int arr[][100], int m, int n){
 	int imin = 0, jmin = 0; int temp = INT_MAX;
 
@@ -43,17 +40,8 @@ void phancong(int arr[][100], int m, int n){
 				jmin = j;
 			} 
 		} 
-	} 
-
-	for( i = 1; i <= m; i++){
-		for( j = 1; j <= n; j++){
-			if( arr[i][j] == temp ){
-				cout<<"("<<imin<<','<<jmin<<")"<<endl;
-			}
-		}
-	}
+	} cout<<"("<<imin<<','<<jmin<<")"<<endl;
 }
-
 void trungbinh_1_gio(int m, int n){
 	for(i = 1 ; i <= m; i++)
 	{
@@ -64,7 +52,6 @@ void trungbinh_1_gio(int m, int n){
 		} cout<<endl<<"chi phi trung binh 1 viec "<<'\t'<< setprecision(1) << fixed<<s/n<<endl;
 	}
 }
-
 void trungbinh_1_nguoi(int m, int n){
 	for(i = 1 ; i <= n; i++)
 	{
